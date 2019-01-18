@@ -1,0 +1,48 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <button onclick="estiloBox()">Texto aqui!</button>
+        </div>
+        <div class="box"></div>
+    </div>
+        
+    <script>
+        function estiloBox(){
+            var divElement = document.createElement('div');
+            divElement.setAttribute('id', 'divs');
+
+            divElement.style.width = 100;
+            divElement.style.height = 100;
+            divElement.style.backgroundColor = "#f00";
+
+            var writeElement = document.querySelector('div.box');
+
+            divElement.onmouseover = function(){
+                divElement.style.backgroundColor = getRandomColor();
+            }
+            writeElement.appendChild(divElement);
+    
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+        return color;
+        }
+
+    </script>
+</body>
+</html>

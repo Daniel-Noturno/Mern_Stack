@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1 class="feio">Texto a ser removio</h1>
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'http://google.com');
+
+        var textElement = document.createTextNode('Acesse o Link');
+        linkElement.appendChild(textElement);
+
+        var writeElement = document.querySelector('#app');
+        writeElement.appendChild(linkElement);
+
+        var Elemento = document.getElementById('h1.feio');
+        containerElement.removeChild(Elemento); //<- don't work
+    </script>
+</body>
+</html>

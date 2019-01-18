@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <script>
+            
+            // Variáveis de Dados
+            var nome = "Noturno";
+            var idade = 23;
+            var peso = 80.2;
+            var humano = true;
+
+            var alunos = ['Gabriel_1', 'Gabriel_2', 'Noturno', 'Lucas'];
+
+            var Programador = {
+                nome: aluno[2],
+                idade = 20,
+                peso = 'desconhecido',
+                humano: false
+            };
+
+            console.log(alunos[0]);
+            console,log(Programador.nome);
+
+            // Operações
+            var x = 10, y = 3;
+            
+            x += 3;
+            console.log(x);
+
+            x -= y;
+            console.log(x);
+
+            x *= y;
+            console.log(x);
+
+            x /= y;
+            console.log(x);
+
+            x %= y;
+            console.log(x);
+
+            // Funções
+            function some(num1, num2) {
+                var resultado = num1 + num2;
+
+                return resuktado;
+            }
+
+            soma(1, 2);
+            console.log(resultado);
+
+            // Condicionais
+
+              // == <- comparação sem tipo de variável inclusa
+              // === <- comparação com tipo de variável inclusa
+            function retornagenero(sexo) {
+                if (sexo === "M") {
+                    return "Masculino"
+                } else if (sexo === "F") {
+                    return "Femenino"
+                } else {
+                    return "Outro"
+                }
+            }
+
+            function retornasexo(sexo) {
+                switch (sexo) {
+                    case "M": return "Mascolino";
+                    case "F": return "Feminino";
+                    default: "Outro";
+                }
+            }
+            var result = retornagenero('M');
+            console.log(result)
+            var result = retornasexo('F');
+            console.log(result)
+
+            // Operações Lógicas
+                    // AND = && / OR = || / NOT !==
+            var sexo = "F", idade = 17;
+
+            if (sexo === 'M' || idade === 18) {
+                console.log('PodePassar');
+            }
+
+            // Condição Ternária
+            var sexo1 = 'F'
+            var retorno = (sexo1 === 'M') ? 'Mascolino' : 'Feminino';
+            console.log(retorno);
+
+            // Estrutura de Repetição
+            for (var i = 0; i <= 100; i ++) {
+                console.log(i);
+            }
+
+            var j = 165439;
+            while (j > 50){
+                console.log(j);
+                j /= 5;
+            }
+
+            // Intervalos e Timeout
+            function intervalo(){
+                console.log('Hello');
+            }
+
+            setInterval(intervalo, 2000);
+            setTimeout(intervalo, 5000);            
+        </script>
+    </body>
+</html>

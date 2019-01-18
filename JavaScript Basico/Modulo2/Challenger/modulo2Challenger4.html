@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul id="list_ul"></ul>
+    </div>
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (i = 0; i < nomes.length; i++){
+            var createElement = document.createElement('li');
+            createElement.setAttribute('id', 'list_il');
+            var writeElement = document.querySelector('#list_ul');
+            writeElement.appendChild(createElement);
+            var textElement = document.createTextNode(nomes[i]);
+            createElement.appendChild(textElement);
+        }
+
+        function adicionar(){
+            var inputElement = document.querySelector('input[name=nome]');
+            
+            var createElement = document.createElement('li');
+            createElement.setAttribute('id', 'list_il');
+            var writeElement = document.querySelector('#list_ul');
+            writeElement.appendChild(createElement);
+            var textElement = document.createTextNode(inputElement.value);
+            createElement.appendChild(textElement);
+
+        }
+
+    </script>
+</body>
+</html>
